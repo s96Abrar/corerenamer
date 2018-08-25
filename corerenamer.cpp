@@ -23,7 +23,7 @@ corerenamer::corerenamer(QWidget *parent) :QWidget(parent),ui(new Ui::corerename
     ui->setupUi(this);
 
     // set stylesheet from style.qrc
-    setStyleSheet(Utilities::getStylesheetFileContent(":/appStyle/style/CoreRenamer.qss"));
+    setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::CoreRenamerStyle));
 
     // set window size
     int x = static_cast<int>(Utilities::screensize().width()  * .8);
@@ -492,7 +492,7 @@ void corerenamer::on_rename_clicked()
     QString msg = QString("Are you sure to rename those files?\nIf you once rename them it is not possible to go back...");
     QMessageBox message(QMessageBox::Question, "Permission", msg, QMessageBox::Yes | QMessageBox::No, this);
     message.setWindowIcon(QIcon(":/app/icons/app-icons/CoreRenemer.svg"));
-    message.setStyleSheet(Utilities::getStylesheetFileContent(":/appStyle/style/Dialog.qss"));
+    message.setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::DialogStyle));
 
     int reply = message.exec();
 
