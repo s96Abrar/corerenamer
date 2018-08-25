@@ -45,7 +45,7 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QStandardItem>
 #include <QAbstractItemModel>
 
-#include "utilities.h"
+#include <cprime/utilities.h>
 
 
 namespace Ui {

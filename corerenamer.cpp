@@ -512,7 +512,7 @@ void corerenamer::on_rename_clicked()
         uStack->clear();
         ui->FLists->clearSelection();
         // Function from utilities.cpp
-        messageEngine("File Renamed Successfully.", Utilities::MessageType::Info);
+        Utilities::messageEngine("File Renamed Successfully.", Utilities::MessageType::Info);
     }
 }
 
