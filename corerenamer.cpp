@@ -597,6 +597,6 @@ void corerenamer::on_doRemoveAddNum_clicked()
 
 void corerenamer::sendFiles(const QStringList &paths) {
     if (paths.count()) {
-        addFiles(paths);
+        addPath(paths.at(0));
     }
 }
