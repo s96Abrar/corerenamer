@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>626</width>
+    <width>635</width>
     <height>469</height>
    </rect>
   </property>
@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="icons.qrc">
-    <normaloff>:/icons/CoreRenemer.svg</normaloff>:/icons/CoreRenemer.svg</iconset>
+    <normaloff>:/icons/CoreRenamer.svg</normaloff>:/icons/CoreRenamer.svg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
