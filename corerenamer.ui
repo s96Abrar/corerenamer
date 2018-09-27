@@ -205,9 +205,6 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
-        <property name="currentIndex">
-         <number>0</number>
-        </property>
         <widget class="QWidget" name="addText">
          <property name="accessibleName">
           <string>renameTools</string>
