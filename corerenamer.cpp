@@ -155,6 +155,8 @@ void corerenamer::addFiles(const QStringList &list)
     ui->FLists->setModel(customSortM);
     ui->FLists->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 
+    setWindowTitle(workFilePath + " - CoreRenamer");
+
     startsetup(1);
 }
 
