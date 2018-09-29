@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="icons.qrc">
-    <normaloff>:/icons/CoreRenamer.svg</normaloff>:/icons/CoreRenamer.svg</iconset>
+    <normaloff>:/icons/corerenamer.svg</normaloff>:/icons/corerenamer.svg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true"/>

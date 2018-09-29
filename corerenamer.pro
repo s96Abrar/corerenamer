@@ -55,10 +55,10 @@ unix {
         target.path = $$BINDIR
 
         desktop.path = $$PREFIX/share/applications/
-        desktop.files = "CoreRenamer.desktop"
+        desktop.files = "corerenamer.desktop"
 
         icons.path = $$PREFIX/share/coreapps/icons/
-        icons.files = icons/CoreRenamer.svg
+        icons.files = icons/corerenamer.svg
 
         INSTALLS += target icons desktop
 }
