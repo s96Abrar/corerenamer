@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=CoreRenamer
-Comment=CoreRenamer is a batch file renamer from CoreApps.
-Exec=corerenamer %F
-Icon=/usr/share/coreapps/icons/CoreRenamer.svg
-Type=Application
-Categories=Utility;Qt;
-Terminal=false
-StartupNotify=true
