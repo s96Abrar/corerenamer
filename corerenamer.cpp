@@ -23,11 +23,11 @@ corerenamer::corerenamer(QWidget *parent) :QWidget(parent),ui(new Ui::corerename
     ui->setupUi(this);
 
     // set stylesheet from style.qrc
-    setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::CoreRenamerStyle));
+    setStyleSheet(CPrime::ThemeFunc::getStyleSheetFileContent(CPrime::StyleTypeName::CoreRenamerStyle));
 
     // set window size
-    int x = static_cast<int>(Utilities::screensize().width()  * .8);
-    int y = static_cast<int>(Utilities::screensize().height()  * .7);
+    int x = static_cast<int>(CPrime::InfoFunc::screenSize().width()  * .8);
+    int y = static_cast<int>(CPrime::InfoFunc::screenSize().height()  * .7);
     this->resize(x, y);
 
     uStack = new QUndoStack(this);
@@ -50,7 +50,7 @@ corerenamer::corerenamer(QWidget *parent) :QWidget(parent),ui(new Ui::corerename
     customSortM = new customSortProxyM();
     m_Model = new QStandardItemModel(0,3);
 
-    Utilities::addDropShadow(ui->renameTools,40);
+    CPrime::ThemeFunc::addDropShadow(ui->renameTools,40);
 
     shotcuts();
     startsetup(false);
@@ -475,7 +475,7 @@ void corerenamer::on_saveRenamed_clicked()
         file.write(textFile.toLatin1());
         file.close();
         // Function from utilities.cpp
-        Utilities::messageEngine("Renamed List Saved.", Utilities::MessageType::Info);
+        CPrime::InfoFunc::messageEngine("Renamed List Saved.", CPrime::MessageType::Info,this);
     }
 }
 
@@ -494,7 +494,7 @@ void corerenamer::on_rename_clicked()
     QString msg = QString("Are you sure to rename those files?\nIf you once rename them it is not possible to go back...");
     QMessageBox message(QMessageBox::Question, "Permission", msg, QMessageBox::Yes | QMessageBox::No, this);
     message.setWindowIcon(QIcon(":/app/icons/app-icons/CoreRenemer.svg"));
-    message.setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::DialogStyle));
+    message.setStyleSheet(CPrime::ThemeFunc::getStyleSheetFileContent(CPrime::StyleTypeName::DialogStyle));
 
     int reply = message.exec();
 
@@ -514,7 +514,7 @@ void corerenamer::on_rename_clicked()
         uStack->clear();
         ui->FLists->clearSelection();
         // Function from utilities.cpp
-        Utilities::messageEngine("File Renamed Successfully.", Utilities::MessageType::Info);
+        CPrime::InfoFunc::messageEngine("File Renamed Successfully.", CPrime::MessageType::Info,this);
     }
 }
 
