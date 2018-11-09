@@ -2,7 +2,7 @@
 Name=CoreRenamer
 Comment=CoreRenamer is a batch file renamer from CoreApps.
 Exec=corerenamer %F
-Icon=/usr/share/coreapps/icons/CoreRenamer.svg
+Icon=/usr/share/coreapps/icons/corerenamer.svg
 Type=Application
 Categories=Utility;Qt;
 Terminal=false

@@ -1,7 +1,7 @@
 # CoreRenamer
 An app of CoreApps family.CoreRenamer is a batch file renamer.
 
-<img src="CoreRenamer.png" width="500">
+<img src="corerenamer.png" width="500">
 
 ### Download
 

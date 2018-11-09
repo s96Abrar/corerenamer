@@ -45,7 +45,7 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QStandardItem>
 #include <QAbstractItemModel>
 
-#include <cprime/utilities.h>
+#include <cprime/themefunc.h>
 
 
 namespace Ui {
@@ -66,7 +66,6 @@ public:
     ~corerenamer();
 
     void sendFiles(const QStringList &paths);
-
     void addFiles(const QStringList &list);
     void addPath(const QString &path);
     QString workFilePath;
